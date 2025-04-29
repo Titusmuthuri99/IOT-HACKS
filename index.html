@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="titus muthuri">
+    <title>BlackHills LIMITED</title>
+    <link rel="stylesheet" href="tito.css">
+    
+</head>
+<body>
+    <header>
+        <h1>BlackHills Limited</h1>
+        <p>Your one-stop shop for all goods and services</p>
+    </header>
+
+    <nav>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">About Us</a>
+        <a onclick="showSection('products')">Our Products</a>
+        <a onclick="showSection('services')">Services</a>
+        <a onclick="showSection('contact')">Contact Us</a>
+    </nav>
+
+    <section id="home" class="active">
+        <h2>Welcome to BlackHills Limited</h2>
+        <p>We specialize in providing a wide range of products and services to meet your needs. Explore our website to find the best offers!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>BlackHills Limited is a leading company dedicated to offering top-quality products and services. Our goal is to provide excellent customer satisfaction through high-quality goods and services.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <div>
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>Description of product 1.</p>
+            </div>
+            <div>
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>Description of product 2.</p>
+            </div>
+            <div>
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>Description of product 3.</p>
+            </div>
+            <div>
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>Description of product 4.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Service 1: We provide shoes which are durable and all sizes with countrywide delivery.</li>
+            <li>Service 2: We have different types of shoes from different companies which are of high quality.</li>
+            <li>Service 3: Description of service 3.</li>
+            <li>Service 4: Description of service 4.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: muthurititus91@gmail.com</p>
+        <p>Phone: 0718749126</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BlackHills Limited. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(id) {
+            // Hide all sections
+            document.querySelectorAll("section").forEach(section => {
+                section.classList.remove("active");
+            });
+            // Show the selected section
+            document.getElementById(id).classList.add("active");
+        }
+    </script>
+</body>
+</html>
